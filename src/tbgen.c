@@ -913,11 +913,11 @@ int main(int argc, char **argv)
   if (only_generate)
     exit(0);
 
-  ply_accurate_w = 0;
+  ply_accurate_w = 1; // XXX
   if (total_stats_w[DRAW_RULE] || total_stats_b[STAT_MATE - DRAW_RULE])
     ply_accurate_w = 1;
 
-  ply_accurate_b = 0;
+  ply_accurate_b = 1; // XXX
   if (total_stats_b[DRAW_RULE] || total_stats_w[STAT_MATE - DRAW_RULE])
     ply_accurate_b = 1;
 
